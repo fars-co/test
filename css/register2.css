@@ -71,7 +71,7 @@ input[name="email"]:focus {
   width: 50%;
 }
 fieldset {
-  margin: 17px 0;
+  margin: 10px 0;
 }
 legend {
   margin-right: 50px;
@@ -83,7 +83,7 @@ div {
 }
 @media (max-width: 500px) {
   input[type="text"] {
-    width: 40%;
+    width: 60%;
     margin: 5px 0;
   }
   input[name="address"],

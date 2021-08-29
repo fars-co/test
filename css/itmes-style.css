@@ -1,15 +1,8 @@
-body {
-  padding: 0px;
-  margin: 0;
-  height: 100vh;
+.neumorphism-toggles {
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-}
-
-.neumorphism-toggles {
-  margin-top: 30px;
 }
 
 .neumorphism-toggles > input[type="checkbox"].neumorphism {

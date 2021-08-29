@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/Vazir.eot");
+  src: url("../fonts/Vazir.eot#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir.woff") format(".woff"),
+    url("../fonts/Vazir.woff2") format(".woff2"),
+    url("../fonts/Vazir.ttf") format("truetype");
+}
+html {
+  direction: rtl;
+  font-family: "vazir", Arial, Helvetica, sans-serif;
+  background-color: rgba(221, 221, 221, 0.8);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+label {
+  padding: 0 5px;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  color: rgba(255, 99, 71, 0.9);
+}
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(51, 51, 51, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* main  */
+.main {
+  padding: 0 15px;
+}
+fieldset {
+  border: none;
+}
+input[type="text"] {
+  width: 15%;
+  height: 1.9em;
+  outline: none;
+  border: 1px solid rgba(51, 51, 51, 0.3);
+}
+input[name="address"],
+input[name="email"] {
+  transition: all 0.8s;
+  width: 10%;
+}
+
+input[name="address"]:focus,
+input[name="email"]:focus {
+  width: 81.5%;
+}
+div {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  input[type="text"] {
+    width: 40%;
+    margin: 5px 0;
+  }
+  input[name="address"],
+  input[name="email"] {
+    transition: all 0.8s;
+    width: 40%;
+  }
+
+  input[name="address"]:focus,
+  input[name="email"]:focus {
+    width: 81.5%;
+  }
+}

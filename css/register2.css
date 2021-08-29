@@ -31,7 +31,7 @@ label {
   padding: 0 5px;
 }
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -43,7 +43,7 @@ h1 {
 }
 .header {
   width: 100%;
-  height: 100px;
+  height: 80px;
   background-color: rgba(51, 51, 51, 0.6);
   display: flex;
   justify-content: center;
@@ -52,13 +52,9 @@ h1 {
 /* main  */
 .main {
   padding: 0 15px;
+  height: calc(100vh - 180px);
 }
-fieldset {
-  border: none;
-}
-form {
-  margin-top: 30px;
-}
+
 input[type="text"] {
   width: 15%;
   height: 1.9em;
@@ -67,17 +63,18 @@ input[type="text"] {
 input[name="address"],
 input[name="email"] {
   transition: all 0.8s;
-  width: 10%;
+  width: 15%;
 }
 
 input[name="address"]:focus,
 input[name="email"]:focus {
-  width: 81.5%;
-  border: 1px solid dodgerblue;
-  border-radius: 10px;
+  width: 50%;
+}
+fieldset {
+  margin: 17px 0;
 }
 div {
-  margin: 20px 0;
+  margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
 }

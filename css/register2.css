@@ -73,6 +73,9 @@ input[name="email"]:focus {
 fieldset {
   margin: 17px 0;
 }
+legend {
+  margin-right: 50px;
+}
 div {
   margin: 10px 0;
   display: flex;

@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/Vazir.eot");
+  src: url("../fonts/Vazir.eot#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir.woff") format(".woff"),
+    url("../fonts/Vazir.woff2") format(".woff2"),
+    url("../fonts/Vazir.ttf") format("truetype"),
+    /* font-family: "IranNastaliq"; */
+      /* src: url('../fonts/IranNastaliq.eot?#') format('eot'), */
+      /* src: url("../fonts/IranNastaliq.eot");
+  src: url("../fonts/IranNastaliq.eot?#") format("embedded-opentype"), */
+      url("../fonts/IranNastaliq.ttf") format("truetype"),
+    url("../fonts/IranNastaliq.woff") format("woff");
+}
+
+html,
+body {
+  font-family: "vazir", Arial, Helvetica, sans-serif;
+  background-color: rgb(213, 222, 245);
+}
+header {
+  height: 100px;
+  margin-bottom: 15px;
+  background: linear-gradient(to left, #4bb0f3, #022b46);
+  /* background: url("../img/header.jpg"); */
+  border-radius: 8px;
+}
+
+.title-header {
+  height: 100%;
+  width: 85%;
+  float: right;
+}
+
+.exit {
+  color: #ffffff;
+  font-size: 40px;
+  float: left;
+  padding: 27px;
+  opacity: 1;
+  cursor: pointer;
+  z-index: 1000000;
+}
+.exit:hover {
+  color: red;
+  font-size: 55px;
+  padding: 22px;
+  transition: 0.5s;
+}
+
+h1 {
+  padding-right: 500px;
+  color: #fff;
+  /* text-shadow: 1px 1px; */
+  font-family: "IranNastaliq";
+}
+.title {
+  color: #ffffff;
+  align-items: center;
+  text-decoration: none;
+  margin: 20px 15px;
+}
+.title:hover {
+  color: #022b46;
+  transition: 1.5s;
+  padding-right: 5px;
+}
+
+.btn-main {
+  position: relative;
+  /* -webkit-appearance: none; */
+  width: 150px;
+  height: 50px;
+  margin: 10px 20px 0px 20px;
+  background-color: #c7cbd3;
+  /* box-shadow: 10px 10px 15px rgb(209, 217, 230, 1),
+    -10px -10px 15px rgba(255, 255, 255, 1),
+    inset 0 0 15px rgb(209, 217, 230, 1), inset 0 0 15px rgba(255, 255, 255, 1); */
+  border-radius: 10px;
+  border: 0;
+  color: #3e7af1;
+  font-size: 30px;
+}
+
+.outerDiv {
+  background-color: rgb(213, 222, 245);
+  color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.leftDiv {
+  background-color: #e3e6ec;
+  color: #000;
+  height: 100%;
+  width: 85%;
+  float: left;
+  border-radius: 8px;
+}
+
+.rightDiv {
+  background-color: #e3e6ec;
+  color: rgb(238, 30, 30);
+  height: 100%;
+  width: 14%;
+  float: right;
+  border-radius: 8px;
+}
+
+object {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+.items {
+  margin: 20px 10px;
+  height: 30px;
+  border-bottom: 1px solid black;
+}

@@ -27,8 +27,8 @@ body {
   margin: 20px;
   background-color: #c7cbd3;
   box-shadow: 10px 10px 15px rgba(209, 217, 230, 1),
-    -10px -10px 15px rgba(255, 255, 255, 1) rgba(209, 217, 230, 1),
-    inset 0 0 15px rgba(255, 255, 255, 1);
+    -10px -10px 15px rgba(255, 255, 255, 1),
+    inset 0 0 15px rgba(209, 217, 230, 1), inset 0 0 15px rgba(255, 255, 255, 1);
   border-radius: 20px;
   outline: none;
   cursor: pointer;

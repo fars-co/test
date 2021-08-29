@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/Vazir.eot");
+  src: url("../fonts/Vazir.eot#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir.woff") format(".woff"),
+    url("../fonts/Vazir.woff2") format(".woff2"),
+    url("../fonts/Vazir.ttf") format("truetype");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "vazir", Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  padding: 20px;
+  text-align: center;
+}
+
+p {
+  margin: 10px, 0;
+  text-align: right;
+  padding-bottom: 20px;
+}
+
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+  text-align: right;
+}
+.lead {
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: chartreuse;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background: darkgoldenrod;
+  color: blue;
+}
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+.bg-light {
+  background: azure;
+  /* color: #3a3a3a; */
+}
+
+.bg-primary {
+  background: darkblue;
+  color: #fff;
+}
+
+/*navbar*/
+#navbar {
+  background: salmon;
+  color: #fff;
+  overflow: auto;
+}
+
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: right;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: cornflowerblue;
+  color: #fff;
+}
+
+/*showcase*/
+#showcase {
+  background: url("../img/showcase.jpg");
+  height: 600px;
+  opacity: 1;
+}
+
+/*Home Info*/
+#home-info {
+  height: 400px;
+}
+
+#home-info .info-image {
+  float: left;
+  width: 50%;
+  background: url("../Login2/img/photo-1.jpg");
+  background-size: cover;
+  min-height: 100%;
+}
+
+#home-info .info-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+
+.box {
+  float: left;
+  width: 3303;
+  padding: 50px;
+  text-align: center;
+}
+
+.box i {
+  margin-bottom: 10px;
+}
+
+/*footer*/
+#main-footer {
+  text-align: center;
+  background: crimson;
+  color: yellow;
+  padding: 20px;
+}

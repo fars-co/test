@@ -1,0 +1,286 @@
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/register-document-style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="title-register-h1">صفحه ثبت پرونده</h1>
+
+    <form action="#" method="POST">
+      <table class="tbl-info">
+        <!-----------id_number----------->
+        <tr>
+          <td class="lbl-items">
+            <label for="kelasman">شماره پرونده:</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="kelasman"
+              id="kelasman"
+              maxlength="8"
+              minlength="8"
+              required
+            />
+          </td>
+          <td class="lbl-items">
+            <label for="qabz-anbar">شماره قبض انبار:</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="qabz-anbar"
+              id="qabz-anbar"
+              maxlength="9"
+              minlength="9"
+              required
+            />
+          </td>
+        </tr>
+        <!----------------first_Name----------------->
+        <tr>
+          <td>
+            <label for="first-name">نام:</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              maxlength="50"
+              required
+            />
+          </td>
+          <!----------------last_Name----------------->
+          <td><label for="last-name">نام خانوادگی:</label></td>
+          <td>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              maxlength="50"
+              required
+            />
+          </td>
+          <!----------------father_Name----------------->
+          <td><label for="father-name">نام پدر:</label></td>
+          <td>
+            <input
+              type="text"
+              name="father-name"
+              id="father-name"
+              maxlength="50"
+              required
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <!----------------national-code----------------->
+          <td><label for="nat-code">کد ملی:</label></td>
+          <td>
+            <input
+              type="text"
+              name="nat-code"
+              id="nat-code"
+              maxlength="50"
+              required
+            />
+          </td>
+          <!----------------mobail----------------->
+          <td><label for="mobail">موبایل:</label></td>
+          <td>
+            <input
+              type="text"
+              name="mobail"
+              id="mobail"
+              maxlength="50"
+              required
+            />
+          </td>
+          <!----------------email----------------->
+          <td><label for="email">ایمیل:</label></td>
+          <td>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              maxlength="50"
+              required
+            />
+          </td>
+        </tr>
+      </table>
+      <table class="tbl-address">
+        <tr>
+          <!----------------address----------------->
+          <td><label for="address">آدرس:</label></td>
+          <td>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              maxlength="150"
+              required
+            />
+          </td>
+        </tr>
+      </table>
+      <table class="tbl-selection">
+        <!--------------------------Date Of Birth----------------------------------->
+        <tr>
+          <td><label for="">تاریخ تولد:</label></td>
+          <td>
+            <input type="date" class="date" />
+          </td>
+        </tr>
+        <!--------------------------storage----------------------------------->
+        <tr>
+          <td><label for="storage">انبار:</label></td>
+          <td>
+            <select name="storage" id="storage" class="select">
+              <option value="---">---</option>
+              <option value="qotb">قطب</option>
+              <option value="danehchin">دانه چین</option>
+            </select>
+          </td>
+          <!--------------------------finder----------------------------------->
+          <td><label for="finder">کاشف:</label></td>
+          <td>
+            <select name="finder" id="finder" class="select">
+              <option value="---">---</option>
+              <option value="police">نیروی انتظامی</option>
+              <option value="samt">صمت</option>
+              <option value="olom-pezeshki">علوم پزشکی</option>
+              <option value="tazirat">تعزیرات</option>
+            </select>
+          </td>
+          <!--------------------------branch----------------------------------->
+          <td><label for="branch">شعبه رسیدگی:</label></td>
+          <td>
+            <select name="branch" id="branch" class="select">
+              <option value="---">---</option>
+              <option value="arak">اراک</option>
+              <option value="saveh">ساوه</option>
+              <option value="tafresh">تفرش</option>
+              <option value="mahalat">محلات</option>
+              <option value="delijan">دلیجان</option>
+              <option value="shazand">شازند</option>
+              <option value="khomein">خمین</option>
+            </select>
+          </td>
+        </tr>
+        <!--------------------------Date Of kashf----------------------------------->
+        <tr>
+          <td><label for="">تاریخ کشف:</label></td>
+          <td>
+            <input type="date" class="date" />
+          </td>
+          <!--------------------------letter Of Finder----------------------------------->
+          <td class="lbl-items" id="td-letter-finder">
+            <label for="letter-finder" id="lbl-letter-finder"
+              >شماره صورتمجلس کاشف:</label
+            >
+          </td>
+          <td>
+            <input
+              type="text"
+              name="letter-number"
+              id="letter-number"
+              maxlength="8"
+              minlength="8"
+              required
+            />
+          </td>
+        </tr>
+      </table>
+      <table class="tbl-category">
+        <!--------------------------Category Goods----------------------------------->
+        <tr>
+          <td><div class="lbl-items" id="div-category">دسته کالا:</div></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              name="chk-pooshak"
+              id="chk-pooshak"
+              class="chk-category"
+            />
+            <label for="chk-pooshak">پوشاک</label>
+          </td>
+          <td>
+            <input
+              type="checkbox"
+              name="chk-asasi"
+              id="chk-asasi"
+              class="chk-category"
+            />
+            <label for="chk-pooshak">کالای اساسی</label>
+          </td>
+          <td>
+            <input
+              type="checkbox"
+              name="chk-asasi"
+              id="chk-asasi"
+              class="chk-category"
+            />
+            <label for="chk-pooshak">لوازم یدکی</label>
+          </td>
+          <td>
+            <input
+              type="checkbox"
+              name="chk-asasi"
+              id="chk-asasi"
+              class="chk-category"
+            />
+            <label for="chk-pooshak">موتورسیکلت</label>
+          </td>
+          <td>
+            <input
+              type="checkbox"
+              name="chk-asasi"
+              id="chk-asasi"
+              class="chk-category"
+            />
+            <label for="chk-pooshak">سریع الفساد</label>
+          </td>
+          <td>
+            <input
+              type="checkbox"
+              name="chk-daroo"
+              id="chk-asasi"
+              class="chk-category"
+            />
+            <label for="chk-pooshak">دارو</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              name="chk-computer"
+              id="chk-computer"
+              class="chk-category"
+            />
+            <label for="chk-computer"> رایانه و وسایل جانبی</label>
+          </td>
+          <td>
+            <input
+              type="checkbox"
+              name="chk-mobail"
+              id="chk-mobail"
+              class="chk-category"
+            />
+            <label for="chk-mobail" class="lbl-category-mobail">
+              موبایل و وسایل ارتباطی</label
+            >
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/Vazir.eot");
+  src: url("../fonts/Vazir.eot#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir.woff") format(".woff"),
+    url("../fonts/Vazir.woff2") format(".woff2"),
+    url("../fonts/Vazir.ttf") format("truetype");
+}
+
+html,
+body {
+  font-family: "vazir", Arial, Helvetica, sans-serif;
+  background: url("../img/header.jpg");
+}
+.login-card {
+  width: 400px;
+  background-color: rgb(126, 126, 126, 0.6);
+  margin: 0 auto;
+  border-radius: 120px 9px 9px 9px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  min-height: 440px;
+}
+
+.login-head {
+  background: rgb(140, 193, 82);
+  width: 400px;
+  height: 120px;
+  border-radius: 9px 9px 0 0;
+}
+
+.login-head h1 {
+  text-align: center;
+  color: #0456a1;
+  font-weight: 700px;
+  font-size: 20px;
+  font-family: "vazir";
+  line-height: 27px;
+  padding-top: 24px;
+}
+
+.avatar {
+  padding-left: 181px;
+  width: 50px;
+  height: 50px;
+}
+
+.log-body {
+  padding: 40px 20px 20px 20px;
+}
+
+.log-user {
+  background: #fefefe;
+  color: #999999;
+  border-radius: 10px;
+  width: 349px;
+  height: 31px;
+  padding: 5px;
+  font-weight: 700px;
+  font-size: 15px;
+  border: none;
+  font-family: "vazir";
+}
+
+.log-pass {
+  background: #fefefe;
+  color: #999999;
+  border-radius: 10px;
+  width: 349px;
+  height: 31px;
+  padding: 5px;
+  font-weight: 700px;
+  font-size: 15px;
+  border: none;
+  font-family: "vazir";
+}
+
+.login-submit {
+  background: #8cc152;
+  border: none;
+  border-radius: 10px;
+  width: 359px;
+  height: 36px;
+  cursor: pointer;
+  font-weight: 700px;
+  font-size: 15px;
+  font-family: "vazir";
+  color: #ffffff;
+}
+
+.log-body a {
+  text-decoration: none;
+  color: #8cc152;
+  font-weight: 900px;
+  font-size: 15px;
+  line-height: 21px;
+}

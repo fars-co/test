@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/Vazir.eot");
+  src: url("../fonts/Vazir.eot#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir.woff") format(".woff"),
+    url("../fonts/Vazir.woff2") format(".woff2"),
+    url("../fonts/Vazir.ttf") format("truetype");
+}
+
+html,
+body {
+  font-family: "vazir", Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    to right,
+    #2377a1,
+    #154963 /* rgba(54, 160, 160, 0.87) */
+  );
+  padding-right: 10px;
+}
+
+.lbl-items {
+  text-align: left;
+}
+
+.title-register-h1 {
+  color: #e24b21;
+  text-align: center;
+  margin: 30px 0;
+}
+
+label {
+  display: inline-block;
+  width: 147px;
+  text-align: left;
+}
+
+.tbl-info input {
+  display: block;
+  margin: 5px;
+  border: 0;
+  border-radius: 5px;
+  height: 25px;
+  padding: 2px 5px;
+  box-shadow: 5px 5px 10px rgb(243, 108, 236);
+  transition: 1s;
+}
+
+.tbl-info input:focus {
+  outline: 0;
+  border-bottom: 2px solid rgb(238, 10, 10);
+  transition: 0.1s;
+}
+.tbl-address input {
+  display: block;
+  margin: 5px;
+  border: 0;
+  border-radius: 5px;
+  height: 25px;
+  width: 867px;
+  padding: 2px 5px;
+  box-shadow: 5px 5px 10px rgb(243, 108, 236);
+  transition: 1s;
+}
+
+.tbl-address input:focus {
+  outline: 0;
+  border-bottom: 2px solid rgb(238, 10, 10);
+  transition: 0.1s;
+}
+.date {
+  display: inline;
+  margin: 5px;
+  border: 0;
+  border-radius: 5px;
+  height: 25px;
+  padding: 2px 5px;
+  box-shadow: 5px 5px 10px rgb(243, 108, 236);
+  transition: 1s;
+  font-family: "vazir";
+}
+
+.date:focus {
+  outline: 0;
+  border-bottom: 2px solid rgb(238, 10, 10);
+  transition: 0.1s;
+}
+
+#letter-number {
+  display: inline;
+  margin: 5px;
+  border: 0;
+  border-radius: 5px;
+  height: 25px;
+  padding: 2px 5px;
+  box-shadow: 5px 5px 10px rgb(243, 108, 236);
+  transition: 1s;
+  font-family: "vazir";
+}
+
+#letter-number:focus {
+  outline: 0;
+  border-bottom: 2px solid rgb(238, 10, 10);
+  transition: 0.1s;
+}
+
+.select {
+  display: inline;
+  margin: 5px;
+  border: 0;
+  border-radius: 5px;
+  height: 25px;
+  padding: 2px 5px;
+  box-shadow: 5px 5px 10px rgb(243, 108, 236);
+  transition: 1s;
+  font-family: "vazir";
+}
+
+.select:focus {
+  outline: 0;
+  border-bottom: 2px solid rgb(238, 10, 10);
+  transition: 0.1s;
+}
+
+#div-category {
+  margin-top: 15px;
+}
+
+.tbl-category div {
+  display: block;
+  margin: 5px;
+}
+
+#div-category {
+  display: inline-block;
+  width: 147px;
+  text-align: left;
+}
+
+#chk-pooshak {
+  display: inline-block;
+  margin-right: 160px;
+  margin-left: 0;
+}
+
+.tbl-category label {
+  display: inline-block;
+  text-align: right;
+  margin: 3px;
+  padding: 0;
+}
+
+#chk-computer {
+  display: inline-block;
+  margin-right: 160px;
+  margin-left: 0;
+}
+
+.lbl-category-mobail {
+  display: inline-block;
+  text-align: right;
+  margin: 3px;
+  padding: 0;
+  text-anchor: middle;
+}

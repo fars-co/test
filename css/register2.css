@@ -50,6 +50,9 @@ h1 {
   align-items: center;
 }
 /* main  */
+form {
+  margin: 50px 0;
+}
 .main {
   padding: 0 15px;
   height: calc(100vh - 180px);
@@ -77,19 +80,19 @@ legend {
   margin-right: 50px;
 }
 div {
-  margin: 8px 0;
+  margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
 }
 @media (max-width: 500px) {
-  input[type="text"] {
-    width: 60%;
+  input[type],
+  select {
+    width: 35%;
     margin: 5px 0;
   }
   input[name="address"],
   input[name="email"] {
     transition: all 0.8s;
-    width: 40%;
   }
 
   input[name="address"]:focus,

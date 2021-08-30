@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="css/itmes-style.css">
       <link rel="stylesheet" href="css/register2.css">
  <style>
-   label,select{
+   label{
      width: 180px;
      text-align: left;
 height: 2em;
    }
-   input,select{
-     margin-bottom: 10px;
-   }
+input,select,option{
+  width: 14.5%;
+}
    input[name="address"]:focus,
 input[name="email"]:focus {
   width: 60%;
@@ -78,7 +78,9 @@ input[name="email"]:focus {
               maxlength="50"
               required
             />
-          <!----------------father_Name----------------->
+            </div>
+
+<div>         <!----------------father_Name----------------->
           <label for="father-name">نام پدر:</label>
             <input
               type="text"
@@ -96,8 +98,7 @@ input[name="email"]:focus {
               maxlength="50"
               required
             />
-        
-  </div>
+      </div>  
 
 
            <div>
@@ -111,6 +112,8 @@ input[name="email"]:focus {
               maxlength="50"
               required
             />
+           </div>
+           <div>
           <!----------------email----------------->
               <label for="email">ایمیل:</label>
             <input
@@ -157,8 +160,11 @@ input[name="email"]:focus {
               <option value="olom-pezeshki">علوم پزشکی</option>
               <option value="tazirat">تعزیرات</option>
             </select>
-          <!--------------------------branch----------------------------------->
-        <label for="branch">شعبه رسیدگی:</label>
+        </div>
+
+            <!--------------------------branch----------------------------------->
+      <div>
+          <label for="branch">شعبه رسیدگی:</label>
             <select name="branch" id="branch" class="select">
               <option value="---">---</option>
               <option value="arak">اراک</option>
@@ -169,6 +175,8 @@ input[name="email"]:focus {
               <option value="shazand">شازند</option>
               <option value="khomein">خمین</option>
             </select>
+      </div>
+      <div>
         <!--------------------------Date Of kashf----------------------------------->
                   <label for="letter-finder" id="lbl-letter-finder"
               >شماره صورتمجلس کاشف:</label

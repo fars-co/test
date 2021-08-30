@@ -7,16 +7,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="css/mainStyle.css" />
+    <link rel="stylesheet" href="css/main-style.css" />
     <script src="js/mainscript.js"></script>
-    <title>Document</title>
+    <title>صفحه اصلی</title>
   </head>
-  <body>
+  <body onload="load_items_panel()">
     <header>
       <div class="parent-div-header">
         <div class="title-header">
-          <h1>سیستم بایگانی الکترونیک</h1>
-          <h1>سیستم بایگانی الکترونیک</h1>
           <h1>سیستم بایگانی الکترونیک</h1>
         </div>
         <a class="exit" id="exit" onclick="exit_app()"
@@ -27,10 +25,35 @@
     <section>
       <div class="outerDiv">
         <div class="rightDiv">
-          <div class="items">
+          <div>
+            <button class="btn-main" id="btn-home" onclick="load_home()">
+              <i class="fa fa-home"></i>
+            </button>
+          </div>
+          <div>
+            <button class="btn-main" id="btn-home" onclick="create_document()">
+              <i class="fa fa-home"></i>
+            </button>
+          </div>
+          <div>
+            <button class="btn-main" id="btn-home" onclick="load_home()">
+              <i class="fa fa-home"></i>
+            </button>
+          </div>
+          <div>
+            <button class="btn-main" id="btn-home" onclick="load_home()">
+              <i class="fa fa-home"></i>
+            </button>
+          </div>
+          <!-- <div class="items">
             <a href="#" onclick="load_home()" class="title"
               ><i class="fa fa-home fa-fw"></i>صفحه اول</a
             >
+          </di>
+          <div>
+            <button class="btn-main" id="btn-home" onclick="load_home()">
+              <i class="fa fa-home"></i>
+            </button>
           </div>
           <div class="items">
             <a href="#" onclick="create_document()" class="title"
@@ -41,7 +64,7 @@
             <a href="#" onclick="load_home()" class="title"
               ><i class="fa fa-search fa-fw"></i>جستجوی پرونده</a
             >
-          </div>
+          </div> -->
         </div>
         <div class="leftDiv" id="leftDiv"></div>
       </div>

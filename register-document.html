@@ -1,32 +1,36 @@
-<html lang="en" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/register-document-style.css" />
-<<<<<<< HEAD
-    <title>فرم ثبت پرونده</title>
-=======
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/itmes-style.css" />
-    <title>Document</title>
->>>>>>> 9b178bd4673e866257ab59dc9b718c5668b854ea
+    <link rel="stylesheet" href="css/register-document-style.css">
+ <style>
+   label{
+     width: 180px;
+     text-align: left;
+height: 2em;
+margin-left: 5px;
+   }
+input,select,option{
+  width: 14.5%;
+}
+   input[name="address"]:focus,
+input[name="email"]:focus {
+  width: 60%;
+}
+
+ </style>
+
   </head>
   <body>
-    <h1 class="title-register-h1">صفحه ثبت پرونده</h1>
-
-    <form action="#" method="POST">
-      <table class="tbl-info">
-        <!-----------id_number----------->
-        <tr>
-          <td class="lbl-items">
+    <!-- header -->
+    <header class="header">
+      <h1>صفحه ثبت پرونده</h1>
+    </header>
+    <main class="main container">
+      <form action="#" method="POST">
+   
+      <div class="container-each-section">
+            <!-----------id_number----------->
             <label for="kelasman">شماره پرونده:</label>
-          </td>
-          <td>
             <input
+            autofocus
               type="text"
               name="kelasman"
               id="kelasman"
@@ -34,11 +38,7 @@
               minlength="8"
               required
             />
-          </td>
-          <td class="lbl-items">
             <label for="qabz-anbar">شماره قبض انبار:</label>
-          </td>
-          <td>
             <input
               type="text"
               name="qabz-anbar"
@@ -47,14 +47,11 @@
               minlength="9"
               required
             />
-          </td>
-        </tr>
-        <!----------------first_Name----------------->
-        <tr>
-          <td>
+        </div>
+    
+  <div>
+<!----------------first_Name----------------->
             <label for="first-name">نام:</label>
-          </td>
-          <td>
             <input
               type="text"
               name="first-name"
@@ -62,10 +59,8 @@
               maxlength="50"
               required
             />
-          </td>
           <!----------------last_Name----------------->
-          <td><label for="last-name">نام خانوادگی:</label></td>
-          <td>
+          <label for="last-name">نام خانوادگی:</label>
             <input
               type="text"
               name="last-name"
@@ -73,10 +68,9 @@
               maxlength="50"
               required
             />
-          </td>
-          <!----------------father_Name----------------->
-          <td><label for="father-name">نام پدر:</label></td>
-          <td>
+            </div>
+<div>         <!----------------father_Name----------------->
+          <label for="father-name">نام پدر:</label>
             <input
               type="text"
               name="father-name"
@@ -84,13 +78,8 @@
               maxlength="50"
               required
             />
-          </td>
-        </tr>
-
-        <tr>
           <!----------------national-code----------------->
-          <td><label for="nat-code">کد ملی:</label></td>
-          <td>
+          <label for="nat-code">کد ملی:</label>
             <input
               type="text"
               name="nat-code"
@@ -98,10 +87,10 @@
               maxlength="50"
               required
             />
-          </td>
-          <!----------------mobail----------------->
-          <td><label for="mobail">موبایل:</label></td>
-          <td>
+      </div>  
+           <div>
+            <!----------------mobail----------------->
+          <label for="mobail">موبایل:</label>
             <input
               type="text"
               name="mobail"
@@ -109,10 +98,10 @@
               maxlength="50"
               required
             />
-          </td>
+           </div>
+           <div>
           <!----------------email----------------->
-          <td><label for="email">ایمیل:</label></td>
-          <td>
+              <label for="email">ایمیل:</label>
             <input
               type="text"
               name="email"
@@ -120,14 +109,11 @@
               maxlength="50"
               required
             />
-          </td>
-        </tr>
-      </table>
-      <table class="tbl-address">
-        <tr>
-          <!----------------address----------------->
-          <td><label for="address">آدرس:</label></td>
-          <td>
+    </div>
+ 
+            <!----------------address----------------->
+    <div>
+              <label for="address">آدرس:</label>
             <input
               type="text"
               name="address"
@@ -135,30 +121,23 @@
               maxlength="150"
               required
             />
-          </td>
-        </tr>
-      </table>
-      <table class="tbl-selection">
-        <!--------------------------Date Of Birth----------------------------------->
-        <tr>
-          <td><label for="">تاریخ تولد:</label></td>
-          <td>
+            </div>
+ <div>
+              <!--------------------------Date Of Birth----------------------------------->
+        <label for="">تاریخ تولد:</label>
             <input type="date" class="date" />
-          </td>
-        </tr>
-        <!--------------------------storage----------------------------------->
-        <tr>
-          <td><label for="storage">انبار:</label></td>
-          <td>
+ </div>
+              
+<div>
+  <!--------------------------storage----------------------------------->
+          <label for="storage">انبار:</label>
             <select name="storage" id="storage" class="select">
               <option value="---">---</option>
               <option value="qotb">قطب</option>
               <option value="danehchin">دانه چین</option>
             </select>
-          </td>
           <!--------------------------finder----------------------------------->
-          <td><label for="finder">کاشف:</label></td>
-          <td>
+          <label for="finder">کاشف:</label>
             <select name="finder" id="finder" class="select">
               <option value="---">---</option>
               <option value="police">نیروی انتظامی</option>
@@ -166,10 +145,10 @@
               <option value="olom-pezeshki">علوم پزشکی</option>
               <option value="tazirat">تعزیرات</option>
             </select>
-          </td>
-          <!--------------------------branch----------------------------------->
-          <td><label for="branch">شعبه رسیدگی:</label></td>
-          <td>
+        </div>
+            <!--------------------------branch----------------------------------->
+      <div>
+          <label for="branch">شعبه رسیدگی:</label>
             <select name="branch" id="branch" class="select">
               <option value="---">---</option>
               <option value="arak">اراک</option>
@@ -180,21 +159,12 @@
               <option value="shazand">شازند</option>
               <option value="khomein">خمین</option>
             </select>
-          </td>
-        </tr>
+      </div>
+      <div>
         <!--------------------------Date Of kashf----------------------------------->
-        <tr>
-          <td><label for="">تاریخ کشف:</label></td>
-          <td>
-            <input type="date" class="date" />
-          </td>
-          <!--------------------------letter Of Finder----------------------------------->
-          <td class="lbl-items" id="td-letter-finder">
-            <label for="letter-finder" id="lbl-letter-finder"
+                  <label for="letter-finder" id="lbl-letter-finder"
               >شماره صورتمجلس کاشف:</label
             >
-          </td>
-          <td>
             <input
               type="text"
               name="letter-number"
@@ -202,94 +172,15 @@
               maxlength="8"
               minlength="8"
               required
-            />
-          </td>
-        </tr>
-      </table>
-      <!-- <table class="tbl-category">
-        <tr>
-          <td><div class="lbl-items" id="div-category">دسته کالا:</div></td>
-        </tr>
-        <tr>
-          <td>
-            <input
-              type="checkbox"
-              name="chk-pooshak"
-              id="chk-pooshak"
-              class="chk-category"
-            />
-            <label for="chk-pooshak">پوشاک</label>
-          </td>
-          <td>
-            <input
-              type="checkbox"
-              name="chk-asasi"
-              id="chk-asasi"
-              class="chk-category"
-            />
-            <label for="chk-pooshak">کالای اساسی</label>
-          </td>
-          <td>
-            <input
-              type="checkbox"
-              name="chk-asasi"
-              id="chk-asasi"
-              class="chk-category"
-            />
-            <label for="chk-pooshak">لوازم یدکی</label>
-          </td>
-          <td>
-            <input
-              type="checkbox"
-              name="chk-asasi"
-              id="chk-asasi"
-              class="chk-category"
-            />
-            <label for="chk-pooshak">موتورسیکلت</label>
-          </td>
-          <td>
-            <input
-              type="checkbox"
-              name="chk-asasi"
-              id="chk-asasi"
-              class="chk-category"
-            />
-            <label for="chk-pooshak">سریع الفساد</label>
-          </td>
-          <td>
-            <input
-              type="checkbox"
-              name="chk-daroo"
-              id="chk-asasi"
-              class="chk-category"
-            />
-            <label for="chk-pooshak">دارو</label>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input
-              type="checkbox"
-              name="chk-computer"
-              id="chk-computer"
-              class="chk-category"
-            />
-            <label for="chk-computer"> رایانه و وسایل جانبی</label>
-          </td>
-          <td>
-            <input
-              type="checkbox"
-              name="chk-mobail"
-              id="chk-mobail"
-              class="chk-category"
-            />
-            <label for="chk-mobail" class="lbl-category-mobail">
-              موبایل و وسایل ارتباطی</label
-            >
-          </td>
-        </tr>
-      </table> -->
-      <div class="neumorphism-toggles">
+           
+              />
+        <label for="">تاریخ کشف:</label>
+            <input type="date" class="date" />
+          <!--------------------------letter Of Finder----------------------------------->
+  
+</div>
+ 
+              <div class="neumorphism-toggles">
         <input type="checkbox" class="neumorphism fa fas fa-home" />
         <input type="checkbox" class="neumorphism fa fa-bell" />
         <input type="checkbox" class="neumorphism fa fa-lightbulb" />
@@ -299,6 +190,6 @@
         <input type="checkbox" class="neumorphism fa fa-blender" />
         <input type="checkbox" class="neumorphism fa fa-blender" />
       </div>
-    </form>
-  </body>
+      </form>
+    </body>
 </html>

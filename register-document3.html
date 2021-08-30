@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="css/itmes-style.css">
       <link rel="stylesheet" href="css/register2.css">
  <style>
-   label{
+   label,select{
      width: 180px;
-
+     text-align: left;
+height: 2em;
+   }
+   input,select{
+     margin-bottom: 10px;
    }
    input[name="address"]:focus,
 input[name="email"]:focus {
   width: 60%;
 }
- select{
-  width: 180px;
-   }
+ 
  </style>
   </head>
   <body>
@@ -168,10 +170,7 @@ input[name="email"]:focus {
               <option value="khomein">خمین</option>
             </select>
         <!--------------------------Date Of kashf----------------------------------->
-          <label for="">تاریخ کشف:</label>
-            <input type="date" class="date" />
-          <!--------------------------letter Of Finder----------------------------------->
-            <label for="letter-finder" id="lbl-letter-finder"
+                  <label for="letter-finder" id="lbl-letter-finder"
               >شماره صورتمجلس کاشف:</label
             >
             <input
@@ -183,6 +182,10 @@ input[name="email"]:focus {
               required
            
               />
+        <label for="">تاریخ کشف:</label>
+            <input type="date" class="date" />
+          <!--------------------------letter Of Finder----------------------------------->
+  
 </div>
  
               <div class="neumorphism-toggles">

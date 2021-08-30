@@ -4,36 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>register2</title>
+    <title>register3</title>
        <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
     <link rel="stylesheet" href="css/itmes-style.css">
       <link rel="stylesheet" href="css/register2.css">
-<style>
-     label{
-     width: 98px;
 
-
-   }
-     label[id="lbl-letter-finder"]{
-     width: 200px;
-
-   }
-     label[for="branch"]{
-     width: 150px;
-
-   }
-     label[for="qabz-anbar"]{
-     width: 121px;
-
-   }
-   select{
-  width: 15%;
-   }
-</style>
-    </head>
+  </head>
   <body>
     <!-- header -->
     <header class="header">
@@ -41,9 +20,7 @@
     </header>
     <main class="main container">
       <form action="#" method="POST">
-        <fieldset>
-
-    <legend>بخش اول:</legend>
+   
       <div class="container-each-section">
             <!-----------id_number----------->
             <label for="kelasman">شماره پرونده:</label>
@@ -66,10 +43,7 @@
               required
             />
         </div>
-        </fieldset>
-                <fieldset>
-
-    <legend>بخش دوم:</legend>
+    
   <div>
 
 <!----------------first_Name----------------->
@@ -90,7 +64,9 @@
               maxlength="50"
               required
             />
-          <!----------------father_Name----------------->
+            </div>
+
+<div>         <!----------------father_Name----------------->
           <label for="father-name">نام پدر:</label>
             <input
               type="text"
@@ -108,13 +84,7 @@
               maxlength="50"
               required
             />
-        
-  </div>
-</fieldset>
-        <fieldset>
-
-    <legend>بخش سوم:</legend>
-
+      </div>  
 
 
            <div>
@@ -128,6 +98,8 @@
               maxlength="50"
               required
             />
+           </div>
+           <div>
           <!----------------email----------------->
               <label for="email">ایمیل:</label>
             <input
@@ -138,10 +110,7 @@
               required
             />
     </div>
-    </fieldset>
-                <fieldset>
-
-    <legend>بخش چهارم:</legend>
+ 
             <!----------------address----------------->
     <div>
               <label for="address">آدرس:</label>
@@ -153,19 +122,13 @@
               required
             />
             </div>
-            </fieldset>
-               <fieldset>
-
-    <legend>بخش پنجم:</legend> <div>
+ <div>
               <!--------------------------Date Of Birth----------------------------------->
         <label for="">تاریخ تولد:</label>
             <input type="date" class="date" />
  </div>
               
- </fieldset>
- <fieldset>
 
-                <legend>بخش ششم:</legend>
 <div>
   <!--------------------------storage----------------------------------->
           <label for="storage">انبار:</label>
@@ -183,8 +146,11 @@
               <option value="olom-pezeshki">علوم پزشکی</option>
               <option value="tazirat">تعزیرات</option>
             </select>
-          <!--------------------------branch----------------------------------->
-        <label for="branch">شعبه رسیدگی:</label>
+        </div>
+
+            <!--------------------------branch----------------------------------->
+      <div>
+          <label for="branch">شعبه رسیدگی:</label>
             <select name="branch" id="branch" class="select">
               <option value="---">---</option>
               <option value="arak">اراک</option>
@@ -195,15 +161,10 @@
               <option value="shazand">شازند</option>
               <option value="khomein">خمین</option>
             </select>
+      </div>
+      <div>
         <!--------------------------Date Of kashf----------------------------------->
-       </div>
-        <div> 
-        <label for="">تاریخ کشف:</label>
-            <input type="date" class="date" />
-        
-         
-           <!--------------------------letter Of Finder----------------------------------->
-            <label for="letter-finder" id="lbl-letter-finder"
+                  <label for="letter-finder" id="lbl-letter-finder"
               >شماره صورتمجلس کاشف:</label
             >
             <input
@@ -215,11 +176,12 @@
               required
            
               />
+        <label for="">تاریخ کشف:</label>
+            <input type="date" class="date" />
+          <!--------------------------letter Of Finder----------------------------------->
+  
 </div>
-         </fieldset>
-                         <fieldset>
-
-    <legend>بخش هفتم:</legend>
+ 
               <div class="neumorphism-toggles">
         <input type="checkbox" class="neumorphism fa fas fa-home" />
         <input type="checkbox" class="neumorphism fa fa-bell" />
@@ -230,7 +192,6 @@
         <input type="checkbox" class="neumorphism fa fa-blender" />
         <input type="checkbox" class="neumorphism fa fa-blender" />
       </div>
-        </fieldset>
       </form>
     </body>
 </html>

@@ -27,9 +27,7 @@ ul,
 li {
   list-style: none;
 }
-label {
-  padding: 0 5px;
-}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -58,15 +56,9 @@ form {
   height: calc(100vh - 180px);
 }
 
-input[type="text"] {
-  width: 15%;
-  height: 1.9em;
-  outline-color: none;
-}
 input[name="address"],
 input[name="email"] {
   transition: all 0.8s;
-  width: 15%;
 }
 
 input[name="address"]:focus,
@@ -83,6 +75,21 @@ div {
   margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
+}
+label {
+  width: 180px;
+  text-align: left;
+  height: 2em;
+  padding: 0 5px;
+}
+input,
+select,
+option {
+  width: 14.5%;
+}
+input[name="address"]:focus,
+input[name="email"]:focus {
+  width: 60%;
 }
 @media (max-width: 500px) {
   input[type],

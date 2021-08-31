@@ -80,12 +80,29 @@ label {
   width: 180px;
   text-align: left;
   height: 2em;
-  padding: 0 5px;
+  display: block;
+  margin: 5px 7px 0px 0;
+  border: none;
+  padding: 2px 5px;
+  transition: 1s;
+  outline: none;
+  height: 2.5em;
 }
-input,
+
+input[type="text"],
+input[type="date"],
 select,
 option {
   width: 14.5%;
+  display: block;
+  margin: 5px 7px 0px 0;
+  border: none;
+  padding: 2px 5px;
+  border-bottom: 2px solid white;
+  box-shadow: 5px 5px 10px grey;
+  transition: 1s;
+  outline: none;
+  height: 2.5em;
 }
 input[name="address"]:focus,
 input[name="email"]:focus {
@@ -150,4 +167,22 @@ input[name="email"]:focus {
 }
 .neumorphism-toggles > input[type="checkbox"].neumorphism:checked::before {
   color: #9c1de7;
+}
+
+#lbl-other {
+  margin-right: 10px;
+  width: auto;
+  height: 2em;
+}
+#other {
+  height: 2.5em;
+  font-size: 15px;
+  display: block;
+  margin-top: 5px;
+  border: none;
+  padding: 2px 5px;
+  border-bottom: 2px solid white;
+  box-shadow: 5px 5px 10px grey;
+  transition: 1s;
+  outline: none;
 }
